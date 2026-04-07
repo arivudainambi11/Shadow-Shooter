@@ -1,10 +1,17 @@
 <!DOCTYPE html>
 <html>
 <head>
+<link rel="manifest" href="manifest.json">
+<meta name="theme-color" content="#000000">
 <meta charset="UTF-8">
 <title>Shadow Shooter ULTRA — Best Game in the Universe</title>
 <style>
 * { box-sizing:border-box; }
+  <script>
+if ('serviceWorker' in navigator) {
+  navigator.serviceWorker.register('service-worker.js');
+}
+</script>
 body { margin:0; overflow:hidden; background:#000; touch-action:none; font-family:'Segoe UI',Arial,sans-serif; }
 canvas { display:block; }
 
